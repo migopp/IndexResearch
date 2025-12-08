@@ -48,7 +48,7 @@ template<typename ValueType, template <typename> typename KeyExtractor> HOTRowex
 }
 
 template<typename ValueType, template <typename> typename KeyExtractor> HOTRowex<ValueType, KeyExtractor> & HOTRowex<ValueType, KeyExtractor>::operator=(HOTRowex && other) {
-	mMemoryReclamation = other.mMemoryReclamation;
+	//mMemoryReclamation = other.mMemoryReclamation;
 	mRoot = other.mRoot;
 	other.mRoot = {};
 	return *this;
